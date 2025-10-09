@@ -1,0 +1,38 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Button */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+

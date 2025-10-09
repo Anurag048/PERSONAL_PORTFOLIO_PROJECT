@@ -1,0 +1,74 @@
+@import url('[https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap)');
+
+
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --accent: #6c63ff;
+  --hover-bg: #2d1b69;
+  --shadow: rgba(0, 0, 0, 0.15);
+
+  --card-bg: #ffffff;   /* light mode card */
+  --card-text: #333333;
+  --card-shadow: rgba(0,0,0,0.08);
+
+  --btn-bg: #6c63ff;   /* accent purple */
+  --btn-text: #ffffff;
+  --btn-hover: #2d1b69;
+
+  --leetcode-filter: brightness(0) saturate(100%) invert(0); /* dark logo for light bg */
+  --leetcode-hover-filter: brightness(0) saturate(100%) invert(40%) sepia(100%) hue-rotate(240deg) saturate(200%);
+
+  --nav-bg: #ffffff;
+  --nav-bg-dark: #f1f1f1;
+  --text: #222;
+  --accent: #6c63ff;
+  --accent-hover: #4c41c9;
+
+  .hero-img img {
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.2))
+          brightness(1.05);
+}
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f1a;
+  --text: #eaeaea;
+  --accent: #bb86fc;
+  --hover-bg: #3700b3;
+  --shadow: rgba(255, 255, 255, 0.1);
+  
+  --card-bg: #1e1e2e;   /* dark mode card */
+  --card-text: #eaeaea;
+  --card-shadow: rgba(0,0,0,0.4);
+
+  --btn-bg: #9b87f5;   /* lighter purple for dark mode */
+  --btn-text: #ffffff;
+  --btn-hover: #6c63ff;
+
+  --leetcode-filter: brightness(0) saturate(100%) invert(1); /* light logo for dark bg */
+  --leetcode-hover-filter: brightness(0) saturate(100%) invert(70%) sepia(100%) hue-rotate(240deg) saturate(200%);
+
+  --nav-bg: #0f172a;
+  --nav-bg-dark: #111827;
+  --text: #f1f1f1;
+  --accent: #8b5cf6;
+  --accent-hover: #6d28d9;
+
+  .hero-img img {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.15))
+          brightness(0.95);
+}
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+
+
+
+
+

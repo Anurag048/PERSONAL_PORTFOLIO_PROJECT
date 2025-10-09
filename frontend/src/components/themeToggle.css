@@ -1,0 +1,30 @@
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 12px var(--shadow);
+  transition: background 0.3s, transform 0.3s;
+  z-index: 9999;
+}
+
+.theme-toggle:hover {
+  background: var(--hover-bg);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle{
+    top:15px;
+  }
+}

@@ -1,0 +1,85 @@
+.skills-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--bg); /* subtle background to separate section */
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: var(--text);
+  position: relative;
+  /* display: inline-block; */
+}
+
+.section-title::after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  /* background: #007bff; underline accent */
+  border-radius: 2px;
+}
+
+.skills-grid {
+  max-width: 1000px;  /* centers grid on big screens */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  justify-content: center; /* keeps items centered */
+}
+
+.skill-card {
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 25px 20px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: var(--shadow);
+}
+
+.skill-logo {
+  width: 65px;  /* fixed size for uniformity */
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-logo {
+  transform: rotate(8deg) scale(1.1); /* playful hover effect */
+}
+
+.skill-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .skills-grid {
+    gap: 20px;
+  }
+  .skill-logo {
+    width: 55px;
+    height: 55px;
+  }
+}

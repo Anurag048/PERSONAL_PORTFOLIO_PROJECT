@@ -1,0 +1,74 @@
+.timeline-section {
+  padding: 60px 20px;
+  background: var(--bg); /* Background from Earthy Tone */
+}
+
+.timeline-section .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-dark); /* Heading/Text Dark */
+}
+
+/* Timeline line */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #D9D6CF; /* Soft neutral line */
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: var(--primary); /* Primary Green */
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #ECF2DE; /* Soft light halo */
+}
+
+.timeline-content {
+  background: var(--card-bg); /* Card background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  color: var(--primary); /* Primary Green for headings */
+}
+
+.company, .tech {
+  font-size: 0.9rem;
+  color: var(--text-light); /* Paragraph/Text Light */
+  margin-bottom: 8px;
+}

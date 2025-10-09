@@ -1,0 +1,152 @@
+.about-section {
+  padding: 60px 20px;
+  background: var(--bg);
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--text-dark);
+  text-align: center; /* ensure title is centered */
+}
+
+/* Container for image and text */
+.about-container {
+  display: flex;
+  align-items: flex-start; /* align items to top */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Profile Image */
+/* .about-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--accent);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: floatImg 3s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+} */
+
+/* Text Section */
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  /* .about-img img {
+    width: 200px;
+    height: 200px;
+  } */
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-title {
+    text-align: center; /* ensure mobile title stays centered */
+  }
+}
+
+/* Profile Image */
+/* .about-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--accent);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: floatImg 3s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+} */
+
+/* .about-img img:hover {
+  transform: scale(1.05); /* slight zoom */
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+} */ */
+
+/* Paragraph Hover Effects */
+.fade-in {
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.fade-in:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 158, 11, 0.05); /* subtle highlight */
+}
+
+/* Typing Animation for First Line */
+/* .typing {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--accent);
+  width: 0;
+  animation: typing 2s steps(20) forwards, blink 0.75s step-end infinite;
+  margin-bottom: 20px;
+} */
+
+/* @keyframes typing {
+  from { width: 0; }
+  to { width: 285px; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--accent); }
+} */
+
+/* Fade-in Animation for paragraphs */
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Floating Animation for image */
+/* @keyframes floatImg {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+} */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* .about-img img {
+    width: 200px;
+    height: 200px;
+  } */
+
+  .about-text {
+    max-width: 100%;
+  }
+}
