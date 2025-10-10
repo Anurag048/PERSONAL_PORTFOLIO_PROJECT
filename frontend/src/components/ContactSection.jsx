@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./contactSection.css";
 
+import googleMap from "../assets/google-maps.png";
+import phoneIcon from "../assets/phone-call.png";
+import gmailIcon from "../assets/gmail.png";
 export default function ContactSection() {
   const form = useRef();
 
@@ -43,7 +46,7 @@ export default function ContactSection() {
             <h2>Contact Info</h2>
 
             <div className="contact-card">
-              <img src="./src/assets/google-maps.png" alt="Address" />
+              <img src={googleMap} alt="Address" />
               <div className="contact-detail">
                 <h2>Address</h2>
                 <p>Bahadurgarh, Haryana</p>
@@ -51,7 +54,7 @@ export default function ContactSection() {
             </div>
 
             <div className="contact-card">
-              <img src="./src/assets/phone-call.png" alt="Phone" />
+              <img src={phoneIcon} alt="Phone" />
               <div className="contact-detail">
                 <h2>Phone</h2>
                 <p>+91 8168551493</p>
@@ -59,7 +62,7 @@ export default function ContactSection() {
             </div>
 
             <div className="contact-card">
-              <img src="./src/assets/gmail.png" alt="Email" />
+              <img src={gmailIcon} alt="Email" />
               <div className="contact-detail">
                 <h2>Email</h2>
                 <p>48anuragsingh@gmail.com</p>
