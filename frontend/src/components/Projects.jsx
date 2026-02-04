@@ -3,13 +3,18 @@ import "./projects.css";
 import portfolioImg from "../assets/potfolio.jpeg";
 import newsPandaImg from "../assets/newPanda.jpg";
 import entropyImg from "../assets/entropy.jpg";
-
+import notiesImg from "../assets/notes.jpg";
 const projects = [
   {
     name: "Portfolio Website",
     img: portfolioImg,
     description: "A modern portfolio built with React and CSS.",
-    link: "https://yourportfolio.com"
+    link: "https://anurags-portfolio-theta.vercel.app/"
+  },
+  {name: "Noties",
+    img: notiesImg,
+    description: "A dynamic notes website created to showcase multi user login without sharing data.",
+    link: "https://noties-ten.vercel.app/login"
   },
   {
     name: "Entropy",
