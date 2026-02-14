@@ -118,7 +118,7 @@
     transition: all 0.3s ease;
   }
 
-  .nav-links.active {
+  .nav-links.show {
     display: flex;
   }
 
@@ -127,6 +127,6 @@
   }
 
   .cv-btn {
-    display: none; /* hide CV button on mobile to save space */
+    display: inline-block;
   }
 }

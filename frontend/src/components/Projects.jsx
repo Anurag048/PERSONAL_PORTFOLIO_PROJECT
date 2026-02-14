@@ -4,6 +4,7 @@ import portfolioImg from "../assets/potfolio.jpeg";
 import newsPandaImg from "../assets/newPanda.jpg";
 import entropyImg from "../assets/entropy.jpg";
 import notiesImg from "../assets/notes.jpg";
+import srmsImg from "../assets/srms.jpg";
 const projects = [
   {
     name: "Portfolio Website",
@@ -15,6 +16,11 @@ const projects = [
     img: notiesImg,
     description: "A dynamic notes website created to showcase multi user login without sharing data.",
     link: "https://noties-ten.vercel.app/login"
+  },
+  {name: "SRMS",
+    img: srmsImg,
+    description: "Full-Stack Student Result App enabling admins to manage students, teachers, and results with protected APIs and MongoDB schema design.",
+    link: "https://srmss-gamma.vercel.app/login"
   },
   {
     name: "Entropy",
